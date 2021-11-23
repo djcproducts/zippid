@@ -1,0 +1,33 @@
+name: blinkid_flutter
+description: Flutter plugin for BlinkID, SDK for scanning and OCR of various identity documents.
+version: 5.14.0
+homepage: https://microblink.com
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  json_annotation: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^1.9.0
+  json_serializable: ^4.0.0
+
+# The following section is specific to Flutter.
+flutter:
+  # This section identifies this Flutter project as a plugin project.
+  # The 'pluginClass' and Android 'package' identifiers should not ordinarily
+  # be modified. They are used by the tooling to maintain consistency when
+  # adding or updating assets for this project.
+  plugin:
+    platforms:
+      android:
+        package: com.microblink.flutter
+        pluginClass: MicroblinkFlutterPlugin
+      ios:
+        pluginClass: MicroblinkFlutterPlugin
