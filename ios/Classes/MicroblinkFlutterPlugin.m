@@ -68,7 +68,7 @@ static NSString* const kScanWithCameraMethodName = @"scanWithCamera";
 
     if ([licenseKeyDict objectForKey:@"showTrialLicenseWarning"] != nil) {
         BOOL showTrialLicenseWarning = [[licenseKeyDict objectForKey:@"showTrialLicenseWarning"] boolValue];
-        [MBMicroblinkSDK sharedInstance].showTrialLicenseWarning = showTrialLicenseWarning;
+        [MBMicroblinkSDK sharedInstance].showTrialLicenseWarning = false;
     }
 
     NSString *iosLicense = [licenseKeyDict objectForKey:@"licenseKey"];
